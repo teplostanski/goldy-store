@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Prata&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+
+  <body class="main container">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__items-container">
+          <div class="select" data-state="">
+            <img class="select__icon" src="./assets/map_mark.svg" alt="" />
+            <div class="select__title" data-default="Option 0">
+              Санкт-Петербург
+            </div>
+            <div class="select__content">
+              <label for="singleSelect0" class="select__label"
+                >Санкт-Петербург</label
+              >
+              <input
+                id="singleSelect0"
+                class="select__input"
+                type="radio"
+                name="singleSelect"
+                checked
+              />
+              <label for="singleSelect0" class="select__label"
+                >Санкт-Петербург</label
+              >
+              <input
+                id="singleSelect1"
+                class="select__input"
+                type="radio"
+                name="singleSelect"
+              />
+              <label for="singleSelect1" class="select__label">Москва</label>
+
+              <input
+                id="singleSelect3"
+                class="select__input"
+                type="radio"
+                name="singleSelect"
+              />
+              <label for="singleSelect3" class="select__label"
+                >Нижний Новгород</label
+              >
+              <input
+                id="singleSelect4"
+                class="select__input"
+                type="radio"
+                name="singleSelect"
+              />
+              <label for="singleSelect4" class="select__label"
+                >Ростов-на-Дону</label
+              >
+            </div>
+          </div>
+          <span class="header__number">
+            <img src="./assets/phone.svg" alt="" />
+            <a class="header__number_link link" href="tel:88007852535"
+              >8 800 785-25-35</a
+            >
+          </span>
+        </div>
+
+        <div class="header__logo">
+          <img src="./assets/logo.svg" alt="Goldy Store" />
+        </div>
+
+        <div class="header__items-container">
+          <div class="header__auth">
+            <button class="button signin">Вход</button>
+            <span class="header__auth_pipe">|</span>
+            <button class="button signup">Регистрация</button>
+          </div>
+          <div class="header__store">
+            <button class="button">
+              <img src="./assets/like.svg" alt="" />
+            </button>
+            <button class="button">
+              <img src="./assets/chart.svg" alt="" />
+            </button>
+            <button class="button">
+              <img src="./assets/bag.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <nav class="header__nav">
+        <ul class="header__nav_list">
+          <li class="header__nav_item">
+            <a class="link link__active" href="#">Каталог</a>
+          </li>
+          <li class="header__nav_item">
+            <a class="link" href="#">Акции</a>
+          </li>
+          <li class="header__nav_item">
+            <a class="link" href="#">Бренды</a>
+          </li>
+          <li class="header__nav_item">
+            <a class="link" href="#">Магазины</a>
+          </li>
+          <li class="header__nav_item">
+            <a class="link" href="#">О нас</a>
+          </li>
+          <li class="header__nav_item">
+            <a class="link" href="#">Доставка и оплата</a>
+          </li>
+          <li class="header__nav_item">
+            <a class="link" href="#">Статьи</a>
+          </li>
+        </ul>
+        <div class="search-form">
+          <form>
+            <button class="search-form__button button" type="submit"></button>
+            <input
+              class="search-form__input"
+              type="text"
+              placeholder="Поиск по сайту"
+            />
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <section class="slider"></section>
+    <section class="category"></section>
+    <section class="sale"></section>
+    <section class="banners"></section>
+    <section class="product"></section>
+    <section class="articles"></section>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
