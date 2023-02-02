@@ -9,6 +9,12 @@
   top: 32%;
 }
 
+.select:hover .select__icon {
+  content: url(../assets/map_mark_opacity.svg);
+  /*position: absolute;
+  top: 32%;*/
+}
+
 .select[data-state='active'] .select__title::before {
   transform: translate(0px, -50%) rotate(-45deg);
 }
@@ -74,7 +80,7 @@
 }
 
 .select__input:checked + label::after {
-  content: url(./assets/check.svg);
+  content: url(../assets/check.svg);
   margin-left: 10px;
 }
 

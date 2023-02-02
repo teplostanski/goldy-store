@@ -1,0 +1,8 @@
+.link {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.link__active {
+  color: var(--gray-03);
+}

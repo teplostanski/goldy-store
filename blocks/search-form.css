@@ -1,0 +1,27 @@
+.search-form {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  padding: 0 0 0 23px;
+  border-left: 1px solid var(--gray-10);
+}
+
+.search-form__input {
+  background: transparent;
+  border: none;
+  color: var(--gray-14);
+  width: 110px;
+}
+
+.search-form__input:focus {
+  outline: none;
+}
+
+.search-form__button {
+  padding: 0 10px 0 0;
+}
+
+.search-form__button::before {
+  content: url(../assets/search.svg);
+}

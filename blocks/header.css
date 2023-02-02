@@ -1,0 +1,84 @@
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 24px 0 0 0;
+  height: 75px;
+}
+
+.header__items-container {
+  display: flex;
+  gap: 45px;
+  align-items: center;
+  padding-bottom: 7px;
+}
+
+.header__number_link {
+  padding: 0 0 0 6px;
+}
+
+.header__number:hover
+.header__number_icon {
+  content: url(../assets/phone_opacity.svg);
+}
+
+.header__store {
+  display: flex;
+  gap: 20px;
+  margin: 0 -5px 0 20px;
+}
+
+.header__auth {
+  gap: 10px;
+  display: flex;
+}
+
+.header__auth_pipe {
+  font-size: 10px;
+}
+
+.header__signin {
+  margin-left: 30px;
+}
+
+.header__signin:hover,
+.header__signup:hover {
+  color: var(--gray-03);
+}
+
+.header__store_button {
+  padding: 0 5px 5px 5px;
+}
+
+.header__store_button:hover {
+  background: var(--gray-09);
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  height: 62px;
+  background: var(--gray-12);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav_item {
+  list-style-type: none;
+  /*display: flex;*/
+  font-size: 13px;
+}
+.header__nav_list {
+  margin: 0;
+  padding: 0 112px 0 47px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 77%;
+}

@@ -1,0 +1,7 @@
+.main {
+  background: var(--white);
+  color: var(--gray-00);
+  font-family: 'Inter', sans-serif;
+  font-weight: var(--fw-regular);
+  font-size: 14px;
+}
