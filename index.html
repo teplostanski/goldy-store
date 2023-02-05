@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Prata&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -95,7 +97,9 @@
             <button class="button header__signup">Регистрация</button>
           </div>
           <div class="header__store">
-            <button class="header__store_button button">
+            <button
+              class="header__store_button header__store_button-like button"
+            >
               <img src="./assets/like.svg" alt="" />
             </button>
             <button class="header__store_button button">
@@ -145,12 +149,415 @@
       </nav>
     </header>
 
-    <section class="slider"></section>
-    <section class="category"></section>
-    <section class="sale"></section>
-    <section class="banners"></section>
-    <section class="product"></section>
-    <section class="articles"></section>
+    <section class="slider">
+      <div class="slider__line">
+        <div>
+          <h1 class="slider__title">Суперскидка до 60%</h1>
+          <p class="slider__text">На бриллианты</p>
+          <button class="slider__button button">Подробнее</button>
+          <img class="slider__image" src="./assets/slider_banner_1.png" />
+        </div>
+
+        <div>
+          <h1 class="slider__title">Суперскидка до 40%</h1>
+          <p class="slider__text">На серьги</p>
+          <button class="slider__button button">Подробнее</button>
+          <img class="slider__image" src="./assets/slider_banner_2.png" />
+        </div>
+
+        <div>
+          <h1 class="slider__title">Снижение цен до 60%</h1>
+          <p class="slider__text">На обручальные кольца</p>
+          <button class="slider__button button">Подробнее</button>
+          <img class="slider__image" src="./assets/slider_banner_3.png" />
+        </div>
+      </div>
+
+      <button class="slider__button-prev slider__button-arrow button"></button>
+      <button class="slider__button-next slider__button-arrow button"></button>
+
+      <div class="slider__wrapper">
+        <div class="slider__dot slider__dot_active"></div>
+        <div class="slider__dot"></div>
+        <div class="slider__dot"></div>
+      </div>
+    </section>
+    <section class="category">
+      <h2 class="category__title title">Популярные категории</h2>
+      <div class="category__wrapper">
+        <div class="category__item">
+          <img
+            class="category__item-image"
+            src="./assets/sale_rings.png"
+            alt=""
+          />
+          <span class="category__item-text">Кольца</span>
+        </div>
+
+        <div class="category__item">
+          <img
+            class="category__item-image"
+            src="./assets/sale_earrings.png"
+            alt=""
+          />
+          <span class="category__item-text">Серьги</span>
+        </div>
+
+        <div class="category__item">
+          <img
+            class="category__item-image"
+            src="./assets/sale_wedding_rings.png"
+            alt=""
+          />
+          <span class="category__item-text">Помолвочные кольца</span>
+        </div>
+
+        <div class="category__item">
+          <img
+            class="category__item-image"
+            src="./assets/sale_bracelets.png"
+            alt=""
+          />
+          <span class="category__item-text">Браслеты</span>
+        </div>
+
+        <div class="category__item">
+          <img
+            class="category__item-image"
+            src="./assets/sale_necklace.png"
+            alt=""
+          />
+          <span class="category__item-text">Колье и подвески</span>
+        </div>
+
+        <div class="category__item">
+          <img
+            class="category__item-image"
+            src="./assets/sale_watch.png"
+            alt=""
+          />
+          <span class="category__item-text">Часы</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="sale" class="sale">
+      <h2 class="sale__title title">Распродажа</h2>
+
+      <nav class="sale__tabs" id="sale-tab">
+        <ul class="sale__tab-items">
+          <li class="sale__tab-item">
+            <a href="#sale" class="sale__tab sale__tab_active">Кольца</a>
+          </li>
+          <li class="sale__tab-item">
+            <a href="#sale" class="sale__tab">Серьги</a>
+          </li>
+          <li class="sale__tab-item">
+            <a href="#sale" class="sale__tab">Браслеты</a>
+          </li>
+          <li class="sale__tab-item">
+            <a href="#sale" class="sale__tab">Часы</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="sale__items-wrapper">
+        <div class="sale__item">
+          <!--<button class="button">
+            <img src="./assets/" alt="" />
+          </button>
+          <button class="button">
+            <img src="./assets/" alt="" />
+          </button>-->
+          <img class="sale__item-image" src="./assets/sale_ring_1.png" alt="" />
+          <!--<div class="slider__wrapper">
+            <div class="slider__dot slider__dot_active"></div>
+            <div class="slider__dot"></div>
+            <div class="slider__dot"></div>
+          </div>-->
+          <div class="sale__description">
+            <span class="sale_price">41 000 ₽</span>
+            <p class="sale__text">
+              Стильное кольцо из белого золота c бриллиантами
+            </p>
+          </div>
+        </div>
+
+        <div class="sale__item">
+          <!--<button class="button"></button>
+          <button class="button"></button>-->
+          <img class="sale__item-image" src="./assets/sale_ring_2.png" alt="" />
+          <!--<div class="slider__wrapper">
+            <div class="slider__dot slider__dot_active"></div>
+            <div class="slider__dot"></div>
+            <div class="slider__dot"></div>
+          </div>-->
+          <div class="sale__description">
+            <span class="sale_price">56 000 ₽</span>
+            <p class="sale__text">
+              Стильное кольцо из белого золота c бриллиантами
+            </p>
+          </div>
+        </div>
+
+        <div class="sale__item">
+          <!--<button class="button"></button>
+          <button class="button"></button>-->
+          <img class="sale__item-image" src="./assets/sale_ring_3.png" alt="" />
+          <!--<div class="slider__wrapper">
+            <div class="slider__dot slider__dot_active"></div>
+            <div class="slider__dot"></div>
+            <div class="slider__dot"></div>
+          </div>-->
+          <div class="sale__description">
+            <span class="sale_price">37 500 ₽</span>
+            <p class="sale__text">
+              Стильное кольцо из белого золота c бриллиантами
+            </p>
+          </div>
+        </div>
+
+        <div class="sale__item">
+          <!--<button class="button"></button>
+          <button class="button"></button>-->
+          <img class="sale__item-image" src="./assets/sale_ring_4.png" alt="" />
+          <!--<div class="slider__wrapper">
+            <div class="slider__dot slider__dot_active"></div>
+            <div class="slider__dot"></div>
+            <div class="slider__dot"></div>
+          </div>-->
+          <div class="sale__description">
+            <span class="sale_price">39 200 ₽</span>
+            <p class="sale__text">
+              Стильное кольцо из белого золота c бриллиантами
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banners">
+      <img class="banners__image" src="./assets/banner_1.png" alt="" />
+      <img class="banners__image" src="./assets/banner_2.png" alt="" />
+      <img class="banners__image" src="./assets/banner_3.png" alt="" />
+    </section>
+
+    <section class="product-card">
+      <h2 class="product-card__title title">Товар дня</h2>
+      <div class="product-card__wrapper">
+        <div class="product-card__image-container">
+          <div class="product-card__badges">
+            <span class="product-card__badge product-card__badge_new">New</span>
+            <span class="product-card__badge product-card__badge_hit">Хит</span>
+            <span class="product-card__badge product-card__badge_sale"
+              >Sale</span
+            >
+          </div>
+
+          <img
+            class="product-card__image"
+            src="./assets/product-card_ring.png"
+            alt=""
+          />
+        </div>
+
+        <div class="product-card__info">
+          <div class="product-card__rating">
+            <div class="product-card__rating_star">
+              <img
+                src="./assets/star.svg"
+                alt=""
+                class="product-card__rating-star"
+              />
+              <img
+                src="./assets/star.svg"
+                alt=""
+                class="product-card__rating-star"
+              />
+              <img
+                src="./assets/star.svg"
+                alt=""
+                class="product-card__rating-star"
+              />
+              <img
+                src="./assets/star.svg"
+                alt=""
+                class="product-card__rating-star"
+              />
+              <img
+                src="./assets/unstar.svg"
+                alt=""
+                class="product-card__rating-star"
+              />
+            </div>
+
+            <span class="product-card__rating-number"> 4,2 </span>
+          </div>
+          <h3 class="product-card__name">Кольцо из золота с бриллиантами</h3>
+          <span>Артикул: 1012076</span>
+
+          <div class="product-card__price-wrapper">
+            <span class="product-card__price"> 22 000 ₽ </span>
+
+            <span class="product-card__price-discount">-45%</span>
+
+            <div class="product-card__timer-container">
+              <div class="product-card__timer">
+                <div class="product-card__timer_box">
+                  <span class="product-card__timer_box-number" id="hours"
+                    >12</span
+                  >
+                  <span class="product-card__timer_box-text">часов</span>
+                </div>
+                :
+                <div class="product-card__timer_box">
+                  <span class="product-card__timer_box-number" id="minutes"
+                    >46</span
+                  >
+                  <span class="product-card__timer_box-text">минут</span>
+                </div>
+                :
+                <div class="product-card__timer_box">
+                  <span class="product-card__timer_box-number" id="seconds"
+                    >51</span
+                  >
+                  <span class="product-card__timer_box-text">секунд</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card__choice-color-container">
+            <p class="product-card__choice-title">Цвет</p>
+
+            <div id="color-tab" class="product-card__choice-color-tabs">
+              <div
+                class="product-card__choice-color-tab product-card__choice-color-tab_gray"
+              ></div>
+              <div
+                class="product-card__choice-color-tab product-card__choice-color-tab_yellow product-card__choice-color-tab_active"
+              ></div>
+              <div
+                class="product-card__choice-color-tab product-card__choice-color-tab_orange"
+              ></div>
+              <div
+                class="product-card__choice-color-tab product-card__choice-color-tab_pistachio"
+              ></div>
+            </div>
+          </div>
+
+          <div class="product-card__choice-size-container">
+            <p
+              class="product-card__choice-title product-card__choice-size-title"
+            >
+              Размер
+              <span
+                class="product-card__choice-size-tooltip"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Также как существующая теория напрямую зависит от экономической целесообразности принимаемых решений."
+              >
+                ?
+              </span>
+            </p>
+
+            <div id="size-tab" class="product-card__choice-size-tabs">
+              <div
+                class="product-card__choice-size-tab product-card__choice-size-tab_gray product-card__choice-size-tab_active"
+              >
+                16,5
+              </div>
+              <div class="product-card__choice-size-tab">17,5</div>
+              <div class="product-card__choice-size-tab">18,5</div>
+              <div class="product-card__choice-size-tab">19</div>
+              <div class="product-card__choice-size-tab">19,5</div>
+              <div class="product-card__choice-size-tab">19,5</div>
+              <div class="product-card__choice-size-tab">18,5</div>
+              <div class="product-card__choice-size-tab">19</div>
+              <div
+                class="product-card__choice-size-tab product-card__choice-size-tab_disabled"
+              >
+                19,5
+              </div>
+              <div
+                class="product-card__choice-size-tab product-card__choice-size-tab_disabled"
+              >
+                19,5
+              </div>
+            </div>
+          </div>
+
+          <div id="buy-tab" class="product-card__buttons">
+            <div class="product-card__buys product-card__buys-tabs">
+              <button
+                type="submit"
+                class="product-card__buy product-card__buys-tab product-card__buy-add button"
+              >
+                в корзину
+              </button>
+              <button
+                type="submit"
+                class="product-card__buy product-card__buys-tab product-card__buy-oneclick button"
+              >
+                купить в 1 клик
+              </button>
+            </div>
+
+            <div class="product-card__misc">
+              <button type="button" class="product-card__like button">
+                Сохранить
+              </button>
+              <button type="button" class="product-card__compare button">
+                Сравнить
+              </button>
+              <button type="button" class="product-card__share button">
+                Поделиться
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="articles">
+      <h2 class="articles__title title">Статьи</h2>
+
+      <div class="articles__wrapper">
+        <a class="articles__read-more link">
+          Читать все
+          <!--<img class="articles__read-more_arrow" src="" alt="" />-->
+        </a>
+
+        <div class="articles__item">
+          <img src="./assets/preview_1.png" alt="" class="articles__image" />
+          <span class="articles__date">21 сентября 2021</span>
+          <h3 class="articles__item-title">Обручальные кольца: тренды 2021</h3>
+        </div>
+
+        <div class="articles__item">
+          <img src="./assets/preview_2.png" alt="" class="articles__image" />
+          <span class="articles__date">25 сентября 2021</span>
+          <h3 class="articles__item-title">Главные ювелирные тренды года</h3>
+        </div>
+
+        <div class="articles__item">
+          <img src="./assets/preview_3.png" alt="" class="articles__image" />
+          <span class="articles__date">21 сентября 2021</span>
+          <h3 class="articles__item-title">
+            Жемчуг: 7 малоизвестных фактов о культовом украшении
+          </h3>
+        </div>
+
+        <div class="articles__item">
+          <img src="./assets/preview_4.png" alt="" class="articles__image" />
+          <span class="articles__date">21 сентября 2021</span>
+          <h3 class="articles__item-title">
+            Как отличить золото от подделки: 10 практических советов
+          </h3>
+        </div>
+      </div>
+    </section>
 
     <script src="./index.js"></script>
   </body>

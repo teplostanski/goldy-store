@@ -5,6 +5,7 @@
   --red-01: #e46942;
   --green: #5b8a8f;
   --yellow: #e1a661;
+  --yellow-01: #f1cb7e;
   --orange: #ea8c48;
   --pistachio: #a7e492;
   --gray-00: #303030;
@@ -22,9 +23,13 @@
   --gray-12: #f8f8f8;
   --gray-13: #fafafa;
   --gray-14: #a2a2a2;
+  --gray-15: #8f8f8f;
+  --gray-16: #d0d0d0;
+  --fw-light: 300;
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-semibold: 600;
+  --fw-bold: 700;
 }
 
 * {

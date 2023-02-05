@@ -1,6 +1,7 @@
 .link {
   text-decoration: none;
   color: var(--dark);
+  cursor: pointer;
 }
 
 .link__active {

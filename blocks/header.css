@@ -59,6 +59,26 @@
   background: var(--gray-09);
 }
 
+.header__store_button-like {
+  position: relative;
+}
+
+.header__store_button-like::after {
+  content: '23';
+  font-size: 10px;
+  color: var(--white);
+  background: var(--red-01);
+  border-radius: 50%;
+  width: 19px;
+  height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -3px;
+  right: -10px;
+}
+
 .header__nav {
   display: flex;
   flex-direction: row;
