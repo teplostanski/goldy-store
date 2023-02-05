@@ -20,76 +20,76 @@ for (let i = 0; i < selectSingle_labels.length; i++) {
 
 //slider
 // Исходные данные по слайдеру (const)
-const sliderImages = document.querySelectorAll('.slider__image'),
-  sliderLine = document.querySelector('.slider__line'),
-  sliderDots = document.querySelectorAll('.slider__dot'),
-  sliderButtonNext = document.querySelector('.slider__button-next'),
-  sliderButtonPrev = document.querySelector('.slider__button-prev');
+//const sliderImages = document.querySelectorAll('.slider__image'),
+//  sliderLine = document.querySelector('.slider__line'),
+//  sliderDots = document.querySelectorAll('.slider__dot'),
+//  sliderButtonNext = document.querySelector('.slider__button-next'),
+//  sliderButtonPrev = document.querySelector('.slider__button-prev');
 
-// Переменные
-let sliderCount = 0,
-  sliderWidth;
+//// Переменные
+//let sliderCount = 0,
+//  sliderWidth;
 
-// Адаптивность слайдера
-window.addEventListener('resize', showSlide);
+//// Адаптивность слайдера
+//window.addEventListener('resize', showSlide);
 
-// Кнопки листания слайдов вперед и назад
-sliderButtonNext.addEventListener('click', nextSlide);
-sliderButtonPrev.addEventListener('click', prevSlide);
+//// Кнопки листания слайдов вперед и назад
+//sliderButtonNext.addEventListener('click', nextSlide);
+//sliderButtonPrev.addEventListener('click', prevSlide);
 
-// Автоматическое перелистывание слайдов
-// setInterval(() => {
-//     nextSlide()
-// }, 3000);
+//// Автоматическое перелистывание слайдов
+//// setInterval(() => {
+////     nextSlide()
+//// }, 3000);
 
-// Функции ==================
-// Задает нужную ширину картинки и sliderLine
-function showSlide() {
-  sliderWidth = document.querySelector('.slider').offsetWidth;
-  sliderLine.style.width = sliderWidth * sliderImages.length + 'px';
-  sliderImages.forEach((item) => (item.style.width = sliderWidth + 'px'));
+//// Функции ==================
+//// Задает нужную ширину картинки и sliderLine
+//function showSlide() {
+//  sliderWidth = document.querySelector('.slider').offsetWidth;
+//  sliderLine.style.width = sliderWidth * sliderImages.length + 'px';
+//  sliderImages.forEach((item) => (item.style.width = sliderWidth + 'px'));
 
-  rollSlider();
-}
-showSlide();
+//  rollSlider();
+//}
+//showSlide();
 
-// Перелистывает слайд вперед
-function nextSlide() {
-  sliderCount++;
-  if (sliderCount >= sliderImages.length) sliderCount = 0;
+//// Перелистывает слайд вперед
+//function nextSlide() {
+//  sliderCount++;
+//  if (sliderCount >= sliderImages.length) sliderCount = 0;
 
-  rollSlider();
-  thisSlide(sliderCount);
-}
+//  rollSlider();
+//  thisSlide(sliderCount);
+//}
 
-// Перелистывает слайд назад
-function prevSlide() {
-  sliderCount--;
-  if (sliderCount < 0) sliderCount = sliderImages.length - 1;
+//// Перелистывает слайд назад
+//function prevSlide() {
+//  sliderCount--;
+//  if (sliderCount < 0) sliderCount = sliderImages.length - 1;
 
-  rollSlider();
-  thisSlide(sliderCount);
-}
+//  rollSlider();
+//  thisSlide(sliderCount);
+//}
 
-// Задает шаг перемещения слайдов
-function rollSlider() {
-  sliderLine.style.transform = `translateX(${-sliderCount * sliderWidth}px)`;
-}
+//// Задает шаг перемещения слайдов
+//function rollSlider() {
+//  sliderLine.style.transform = `translateX(${-sliderCount * sliderWidth}px)`;
+//}
 
-// Указывает как слайд по счету активен
-function thisSlide(index) {
-  sliderDots.forEach((item) => item.classList.remove('slider__dot_active'));
-  sliderDots[index].classList.add('slider__dot_active');
-}
+//// Указывает как слайд по счету активен
+//function thisSlide(index) {
+//  sliderDots.forEach((item) => item.classList.remove('slider__dot_active'));
+//  sliderDots[index].classList.add('slider__dot_active');
+//}
 
-// Вешает клик на dot
-sliderDots.forEach((dot, index) => {
-  dot.addEventListener('click', () => {
-    sliderCount = index;
-    rollSlider();
-    thisSlide(sliderCount);
-  });
-});
+//// Вешает клик на dot
+//sliderDots.forEach((dot, index) => {
+//  dot.addEventListener('click', () => {
+//    sliderCount = index;
+//    rollSlider();
+//    thisSlide(sliderCount);
+//  });
+//});
 
 //const tooltipTriggerList = [].slice.call(
 //  document.querySelectorAll('[data-bs-toggle="tooltip"]')
@@ -99,6 +99,11 @@ sliderDots.forEach((dot, index) => {
 //    customClass: 'custom-tooltip',
 //  });
 //});
+
+//const carousel = new bootstrap.Carousel('#carouselExampleIndicators');
+//carousel.addEventListener('slide.bs.carousel', event => {
+//  // сделайте что-нибудь...
+//})
 
 //tooltips
 const tooltipTriggerList = [].slice.call(

@@ -8,8 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Prata&display=swap"
       rel="stylesheet"
     />
     <link
@@ -150,7 +152,91 @@
     </header>
 
     <section class="slider">
-      <div class="slider__line">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide slider__line"
+        data-bs-ride="true"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="slider__dot active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            class="slider__dot"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            class="slider__dot"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h1 class="slider__title">Суперскидка до 60%</h1>
+            <p class="slider__text">На бриллианты</p>
+            <button class="slider__button button">Подробнее</button>
+            <img
+              src="./assets/slider_banner_1.png"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <h1 class="slider__title">Суперскидка до 40%</h1>
+            <p class="slider__text">На серьги</p>
+            <button class="slider__button button">Подробнее</button>
+            <img
+              src="./assets/slider_banner_2.png"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <h1 class="slider__title">Снижение цен до 60%</h1>
+            <p class="slider__text">На обручальные кольца</p>
+            <button class="slider__button button">Подробнее</button>
+            <img
+              src="./assets/slider_banner_3.png"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"
+            ><img src="./assets/arrow16.svg" alt=""
+          /></span>
+          <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"
+            ><img src="./assets/arrow16.svg" alt=""
+          /></span>
+          <span class="visually-hidden">Следующий</span>
+        </button>
+      </div>
+      <!--<div class="slider__line">
         <div>
           <h1 class="slider__title">Суперскидка до 60%</h1>
           <p class="slider__text">На бриллианты</p>
@@ -180,8 +266,9 @@
         <div class="slider__dot slider__dot_active"></div>
         <div class="slider__dot"></div>
         <div class="slider__dot"></div>
-      </div>
+      </div>-->
     </section>
+
     <section class="category">
       <h2 class="category__title title">Популярные категории</h2>
       <div class="category__wrapper">
@@ -262,77 +349,234 @@
       </nav>
 
       <div class="sale__items-wrapper">
-        <div class="sale__item">
-          <!--<button class="button">
-            <img src="./assets/" alt="" />
-          </button>
-          <button class="button">
-            <img src="./assets/" alt="" />
-          </button>-->
-          <img class="sale__item-image" src="./assets/sale_ring_1.png" alt="" />
-          <!--<div class="slider__wrapper">
-            <div class="slider__dot slider__dot_active"></div>
-            <div class="slider__dot"></div>
-            <div class="slider__dot"></div>
-          </div>-->
-          <div class="sale__description">
-            <span class="sale_price">41 000 ₽</span>
-            <p class="sale__text">
-              Стильное кольцо из белого золота c бриллиантами
-            </p>
+        <div class="sale__items-arrows">
+          <img src="./assets/Component 9(1).svg" alt="" />
+          <img src="./assets/Component 9.svg" alt="" />
+        </div>
+
+        <div id="carouselExampleIndicators2" class="carousel slide">
+          <div class="sale__item carousel-inner">
+            <span class="sale__item-discount">
+              Sale
+            </span>
+            <div class="carousel-indicators sale__item-carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators2"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators2"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators2"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-item active">
+              <img
+                class="sale__item-image"
+                src="./assets/sale_ring_1.png"
+                alt=""
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="sale__item-image"
+                src="./assets/sale_ring_1.png"
+                alt=""
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="sale__item-image"
+                src="./assets/sale_ring_1.png"
+                alt=""
+              />
+            </div>
+
+            <div class="sale__description">
+              <span class="sale__price sale__price_past">41 000 ₽<span class="sale__price-discount">-45%</span></span>
+              <p class="sale__text">
+                Стильное кольцо из белого золота c бриллиантами
+              </p>
+            </div>
           </div>
         </div>
 
-        <div class="sale__item">
-          <!--<button class="button"></button>
-          <button class="button"></button>-->
-          <img class="sale__item-image" src="./assets/sale_ring_2.png" alt="" />
-          <!--<div class="slider__wrapper">
-            <div class="slider__dot slider__dot_active"></div>
-            <div class="slider__dot"></div>
-            <div class="slider__dot"></div>
-          </div>-->
-          <div class="sale__description">
-            <span class="sale_price">56 000 ₽</span>
-            <p class="sale__text">
-              Стильное кольцо из белого золота c бриллиантами
-            </p>
+        <div id="carouselExampleIndicators4" class="carousel slide">
+          <div class="sale__item carousel-inner">
+            <div class="carousel-indicators sale__item-carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators4"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators4"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators4"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-item active">
+              <img
+                class="sale__item-image"
+                src="./assets/sale_ring_2.png"
+                alt=""
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="sale__item-image"
+                src="./assets/sale_ring_2.png"
+                alt=""
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="sale__item-image"
+                src="./assets/sale_ring_2.png"
+                alt=""
+              />
+            </div>
+
+            <div class="sale__description">
+              <span class="sale__price">56 000 ₽</span>
+              <p class="sale__text">
+                Стильное кольцо из белого золота c бриллиантами
+              </p>
+            </div>
           </div>
         </div>
 
-        <div class="sale__item">
-          <!--<button class="button"></button>
-          <button class="button"></button>-->
-          <img class="sale__item-image" src="./assets/sale_ring_3.png" alt="" />
-          <!--<div class="slider__wrapper">
-            <div class="slider__dot slider__dot_active"></div>
-            <div class="slider__dot"></div>
-            <div class="slider__dot"></div>
-          </div>-->
-          <div class="sale__description">
-            <span class="sale_price">37 500 ₽</span>
-            <p class="sale__text">
-              Стильное кольцо из белого золота c бриллиантами
-            </p>
+        <div id="carouselExampleIndicators5" class="carousel slide">
+          <div class="sale__item carousel-inner">
+            <div class="carousel-indicators sale__item-carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators5"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators5"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators5"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-item active">
+              <img
+                class="sale__item-image"
+                src="./assets/sale_ring_3.png"
+                alt=""
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="sale__item-image"
+                src="./assets/sale_ring_3.png"
+                alt=""
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="sale__item-image"
+                src="./assets/sale_ring_3.png"
+                alt=""
+              />
+            </div>
+
+            <div class="sale__description">
+              <span class="sale__price">37 500 ₽</span>
+              <p class="sale__text">
+                Стильное кольцо из белого золота c бриллиантами
+              </p>
+            </div>
           </div>
         </div>
 
-        <div class="sale__item">
-          <!--<button class="button"></button>
-          <button class="button"></button>-->
-          <img class="sale__item-image" src="./assets/sale_ring_4.png" alt="" />
-          <!--<div class="slider__wrapper">
-            <div class="slider__dot slider__dot_active"></div>
-            <div class="slider__dot"></div>
-            <div class="slider__dot"></div>
-          </div>-->
-          <div class="sale__description">
-            <span class="sale_price">39 200 ₽</span>
-            <p class="sale__text">
-              Стильное кольцо из белого золота c бриллиантами
-            </p>
+        <div id="carouselExampleIndicators7" class="carousel slide">
+          <div class="sale__item carousel-inner">
+            <div class="carousel-indicators sale__item-carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators7"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators7"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators7"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-item active">
+              <img
+                class="sale__item-image"
+                src="./assets/sale_ring_4.png"
+                alt=""
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="sale__item-image"
+                src="./assets/sale_ring_4.png"
+                alt=""
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="sale__item-image"
+                src="./assets/sale_ring_4.png"
+                alt=""
+              />
+            </div>
+
+            <div class="sale__description">
+              <span class="sale__price">39 200 ₽</span>
+              <p class="sale__text">
+                Стильное кольцо из белого золота c бриллиантами
+              </p>
+            </div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -345,21 +589,81 @@
     <section class="product-card">
       <h2 class="product-card__title title">Товар дня</h2>
       <div class="product-card__wrapper">
-        <div class="product-card__image-container">
-          <div class="product-card__badges">
-            <span class="product-card__badge product-card__badge_new">New</span>
-            <span class="product-card__badge product-card__badge_hit">Хит</span>
-            <span class="product-card__badge product-card__badge_sale"
-              >Sale</span
-            >
+        <div class="product-card__arrows">
+          <img src="./assets/Group 845.svg" alt="" />
+          <img src="./assets/Component 9.svg" alt="" />
+        </div>
+        <div id="carouselExampleIndicators3" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="product-card__badges">
+              <span class="product-card__badge product-card__badge_new"
+                >New</span
+              >
+              <span class="product-card__badge product-card__badge_hit"
+                >Хит</span
+              >
+              <span class="product-card__badge product-card__badge_sale"
+                >Sale</span
+              >
+            </div>
+            <div class="carousel-item active">
+              <img
+                src="./assets/product-card_ring.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/product-card_ring.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/product-card_ring.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
           </div>
+          <button
+            class="product-card__carousel-control-prev carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators3"
+            data-bs-slide="prev"
+          >
+            <span
+              class="product-card__carousel-control-prev-icon carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Предыдущий</span>
+          </button>
+          <button
+            class="product-card__carousel-control-next carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators3"
+            data-bs-slide="next"
+          >
+            <span
+              class="product-card__carousel-control-next-icon carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Следующий</span>
+          </button>
+        </div>
+
+        <!--<div class="product-card__image-container">
+
 
           <img
             class="product-card__image"
             src="./assets/product-card_ring.png"
             alt=""
           />
-        </div>
+          
+        </div>-->
 
         <div class="product-card__info">
           <div class="product-card__rating">
