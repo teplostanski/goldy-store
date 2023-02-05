@@ -811,3 +811,163 @@ padding-left: 5px;
   width: 280px;
   margin-top: 8px;
 }
+
+@media (max-width: 1399px) {
+  /*.main {
+    background-color: red;
+  }*/
+  .category__item {
+    width: 175px;
+    height: 234px;
+  }
+
+  .sale__item {
+    width: 264px;
+  }
+
+  .sale__item-image {
+    margin: 20px 31px 0;
+  }
+
+  .sale__item-discount {
+    z-index: 1;
+  }
+
+  .banners__image {
+    width: 340px;
+    height: 230px;
+  }
+
+  .product-card__carousel-control-prev,
+  .product-card__carousel-control-next {
+    height: 77%;
+  }
+
+  .articles__image {
+    width: 250px;
+    height: 324px;
+  }
+
+  .articles__item-title {
+    font-size: 15px;
+    width: 250px;
+  }
+
+  .articles__date {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1199px) {
+  /*.main {
+    background-color: red;
+  }*/
+
+  .header__nav_list {
+    padding: 0 50px 0 30px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 0;
+  }
+
+  .carousel-control-prev {
+    left: -28px;
+  }
+
+  .carousel-control-next {
+    right: -28px;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .slider__button {
+    margin: 0 0 0 9.4vw;
+  }
+
+  .slider__text {
+    padding: 0 0 0 9.1vw;
+    font-size: 42px;
+  }
+
+  .slider__title {
+    margin: 0 0 0 9.4vw;
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .category__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+
+  .category__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 30px;
+  }
+
+  .category__item {
+    width: 292px;
+    height: 334px;
+  }
+
+  .category__item-text {
+    bottom: 50px;
+  }
+
+  .sale__items-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+
+  .sale__item {
+    width: 100%;
+  }
+
+  .banners__image {
+    width: 296px;
+    height: 200px;
+  }
+
+  .product-card__wrapper {
+    display: grid;
+    gap: 0;
+    justify-content: center;
+    padding: 0px 158px;
+  }
+
+  .product-card__image {
+    object-fit: none;
+  }
+
+  .product-card__carousel-control-prev,
+  .product-card__carousel-control-next {
+    height: 100%;
+  }
+
+  .articles__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    height: 480px;
+    position: relative;
+    gap: 63px;
+}
+
+  .articles__image {
+    width: 270px;
+    height: 340px;
+}
+}
